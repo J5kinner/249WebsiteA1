@@ -1,0 +1,381 @@
+/*Jonah Skinner, 4490415*/
+
+* {
+    font-family: Rubik, Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+
+}
+
+
+h1 {
+    font-weight: bold;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-shadow: 1px 0 0 #100e17, 0 -1px 0 #100e17, 0 1px 0 #100e17, -1px 0 0 #100e17;
+    float: left;
+    padding-top: 14px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    margin-left: -5px;
+    margin-top: 16px;
+    height: 45px;
+    line-height: 27px;
+    display: inline-block;
+    background: #3f63fa;
+    border-radius: 10px;
+    width: 18%;
+    /*padding-left: 2.5%;*/
+}
+
+body {
+    background: #100e17; /*another background option #1a1a1a*/
+    color: whitesmoke;
+            /*linear-gradient(to right, #f93D66, #6D47D9);*/
+}
+/*MAIN MENU STYLE*/
+.nav {
+    border-color: #000;
+
+}
+.menu {
+    overflow: hidden;
+    padding: 5px 12px;
+    width: 78%;
+    display: inline-block;
+    float: right;
+    background: linear-gradient(to left, #100e17, #3f63fa);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.menu a {
+    color: whitesmoke;
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+    /*text-shadow: 1px 0 0 #202020, 0 -1px 0 #363636, 0 1px 0 #313131, -1px 0 0 #2b2b2b;*/
+    float: left;
+
+}
+ul.menu {
+    text-align: left;
+}
+ul.menu li {
+    display:inline-block;
+}
+/* Highlight word color on mouse-over */
+.menu a:hover {
+    background: linear-gradient(to right, #3f63fa, #abb9fa);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.menu a:hover {
+    background-color: #2a4d7d;
+    border-radius: 15px;
+}
+
+#sale {
+    background: -webkit-linear-gradient(#ff004d, #fa8962);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+/*ACCOUNT MENU STYLES*/
+.account-menu {
+    margin-right: 2.5%;
+    background: linear-gradient(to right, #100e17, #8b9dc3);
+    padding: 10px 10px;
+    overflow: hidden;
+    width: 35%;
+    display: inline-block;
+    float: right;
+    height: 23px;
+    clear: both;
+    border-radius: 10px;
+
+
+}
+.account-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 5px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    font-weight: bold;
+}
+ul.account-menu {
+    text-align: center;
+}
+ul.account-menu li {
+    display: inline-block;
+    float: right;
+}
+/* Highlight word color on mouse-over */
+.account-menu a:hover {
+    background: -webkit-linear-gradient(#fa8962, #ff004d );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    border-radius: 15px;
+}
+
+/*"product search form"*/
+#product-search-form {
+    align-content: end;
+    display: inline-block;
+    float: left;
+    padding-top: 9px;
+    margin-left: -5px;
+    height: 20px;
+    line-height: 15px;
+    padding-left: 2.5%;
+
+}
+input[name="query"]{
+    background: #100e17;
+    padding: 10px;
+    margin: 10px;
+    height: 15px;
+    width: 400px;
+    border:1px solid #eaeaea;
+    outline:none;
+    color: whitesmoke;
+    font-size: 15px;
+    text-transform: capitalize;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+input:hover{
+    border-image: linear-gradient(to right, #ff004d, #fa8962);
+    border-image-slice: 1;
+    color:white;
+
+}
+input:focus{
+    border-image: linear-gradient(to right, #ff004d, #fa8962);
+    border-image-slice: 1;
+    color:whitesmoke;
+}
+/*"search products" search bar*/
+.searchbutton[type="submit"] {
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 2px;
+    background: #201c29;
+    border: 1px solid whitesmoke;
+    width: 100px;
+    height: 36px;
+    padding: 0 16px;
+    cursor: default;
+}
+/*"GO" button*/
+.searchbutton[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background: -webkit-linear-gradient(#ff004d, #fa8962);
+    border: 2px solid #c6c6c6;
+    color: #222;
+}
+
+/*"promo" field*/
+#promo {
+    text-align: center;
+    height: 47px;
+    clear: both;
+    border: solid #100e17;
+}
+#promo li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+/*Text style*/
+#promo a {
+    text-decoration: none;
+    color: #404040;
+    float: left;
+    border: 3px dotted whitesmoke;
+    background: rgba(0, 0, 0, 0);
+    padding: 5px;
+}
+#promo a:hover {
+    border: 3px solid;
+    border-image: linear-gradient(to left, #00C853, #B2FF59);
+    border-image-slice: 1;
+    color: whitesmoke;
+}
+/*"CONTENT" div*/
+.content {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+/*featured product*/
+.featured {
+    display: inline-block;
+}
+.featured h2{
+    position: absolute;
+    left: 55%;
+    bottom: 32%;
+}
+.image img{
+    width: 55%;
+    height: auto;
+    /*position: relative;*/
+    margin: 3px;
+    padding: 8px;
+    padding-top: 10px;
+}
+.description {
+    position: absolute;
+    left: 55%;
+    bottom: 30%;
+    /*left: 16px;*/
+}
+.product-detail {
+    position: absolute;
+    left: 55%;
+    bottom: 22%;
+}
+
+/*Special offer link for "bogusPay"*/
+#special-offer {
+    padding-left: 100%;
+    animation: fText 15s infinite linear;
+    text-align: center;
+    text-space: 10px;
+    display: inline-block;
+    white-space: nowrap;
+}
+#special-offer a{
+    text-decoration: none;
+    color: #ff2f31;
+
+}
+#special-offer a:hover{
+    animation-play-state: paused;
+}
+@keyframes  fText{
+    to {
+        transform: translateX(-100%);
+    }
+
+}
+
+
+
+/*Product Styling */
+div.productlist {
+    /*display: grid;*/
+    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+    /*grid-gap: 20px;*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+}
+.product {
+    /*display: inline-block;*/
+    margin-right: 30px;
+    flex: 1;
+    /*border: solid white;*/
+}
+.product a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+    position: relative;
+    top: 170px;
+}
+
+/*IMAGE Styling */
+.image {
+    border: 1px solid rgba(0, 0, 0, 0.44);
+    width: 100%;
+}
+.productlist img {
+    position: relative;
+    bottom: 30px;
+    width: 220px;
+    height: auto;
+}
+/*Product info*/
+.inventory {
+    text-align: left;
+    vertical-align: text-bottom;
+    color: #7d7d7d;
+}
+.cost {
+    font-size: 15px;
+    vertical-align: text-bottom;
+}
+.cart {
+    vertical-align: text-bottom;
+
+}
+
+
+
+
+
+/*Bottom PROMOTIONAL TEXT STYLING */
+#promotional-text p {
+    align-items: center;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(#6467ff, #3d409a);
+    -webkit-background-clip: text;
+}
+#promotional-text a {
+    text-decoration: none;
+}
+
+
+/*FOOTER STYLING*/
+
+p.footer  { text-align: center}
+
+
+/*Social media style */
+
+.social {
+    background: linear-gradient(to right, rgba(255, 106, 2, 0.95), #d91d0d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 10px;
+    overflow: hidden;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.social a {
+    background: linear-gradient(to right, rgba(255, 106, 2, 0.95), #d91d0d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+
+}
+ul.social {
+    text-align: center;
+}
+.social li {
+    display: inline-block;
+}
+/* Highlight word color on mouse-over */
+.social a:hover {
+    background-color: #474747;
+    border-radius: 15px;
+    width: 90%;
+    height: 90%;
+    -webkit-transition: width 2s; /* Safari */
+
+}
+
